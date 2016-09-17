@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if IE 9 ]><html class="ie9"><![endif]-->
 <html class="menu-active">
@@ -166,7 +165,7 @@
                             <div class="tile quick-stats">
                                 <div id="stats-line-2" class="pull-left"></div>
                                 <div class="data">
-                                    <h2 data-value="100000">0</h2>
+                                    <h2 data-value="2454" id="networth"> 0 </h2>
                                     <small>NET WORTH</small>
                                 </div>
                             </div>
@@ -176,7 +175,7 @@
                             <div class="tile quick-stats media">
                                 <div id="stats-line-3" class="pull-left"></div>
                                 <div class="media-body">
-                                    <h2 data-value="14">0</h2>
+                                    <h2 data-value="14" id="rank"> 0 </h2>
                                     <small>Rank</small>
                                 </div>
                             </div>
@@ -188,7 +187,7 @@
                                 <div id="stats-line-4" class="pull-left"></div>
 
                                 <div class="media-body">
-                                    <h2 data-value="4896">0</h2>
+                                    <h2 data-value="23">0</h2>
                                     <small>MARGIN</small>
                                 </div>
                             </div>
@@ -269,18 +268,144 @@
                             <!--Leaderboard-->
                             <div class="tile">
                                 <h2 class="tile-title">Leaderboard</h2>
-                                <div class="tile-config dropdown">
-                                    <a data-toggle="dropdown" href="" class="tile-menu"></a>
-                                    <ul class="dropdown-menu pull-right text-right">
-                                        <li><a href="">Refresh</a></li>
-                                    </ul>
-                                </div>
+                                <table class="table table-stripped">
+                                    <thead>
+                                        <tr > 
+                                        <th> Username </th> 
+                                        <th> Networth </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="leaderboard-data">
+                                        <tr>
+                                        <td> Abhijith </td>
+                                        <td> 100000000</td>
+                                        </tr>
+                                        <tr>
+                                        <td> Sarath </td>
+                                        <td> 100000000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                             
                         </div>
                         <div class="clearfix"></div>
                     </div>
                 </div>
+
+
+                <div class="block-area" id="main-widget">
+                    <div class="row">
+                     
+                        
+                        <div class="col-md-3">
+                            
+                            <div class="tile">
+                                <h2 class="tile-title"> Top Gainers</h2>
+                                <table class="table table-stripped">
+                                    <thead>
+                                        <tr > 
+                                        <th> Name </th> 
+                                        <th> % Change </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="top-gainers-data">
+                                        <tr>
+                                        <td> Abhijith </td>
+                                        <td> 100000000</td>
+                                        </tr>
+                                        <tr>
+                                        <td> Sarath </td>
+                                        <td> 100000000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-3">
+                            
+                            <div class="tile">
+                                <h2 class="tile-title"> Top Losers</h2>
+                                <table class="table table-stripped">
+                                    <thead>
+                                        <tr > 
+                                        <th> Name </th> 
+                                        <th> % Change </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="top-losers-data">
+                                        <tr>
+                                        <td> Abhijith </td>
+                                        <td> 100000000</td>
+                                        </tr>
+                                        <tr>
+                                        <td> Sarath </td>
+                                        <td> 100000000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-3">
+
+                            <div class="tile">
+                                <h2 class="tile-title"> Most Active(Qty)</h2>
+                                <table class="table table-stripped">
+                                    <thead>
+                                        <tr > 
+                                        <th> Name </th> 
+                                        <th> % Change </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="most-active-qty-data">
+                                        <tr>
+                                        <td> Abhijith </td>
+                                        <td> 100000000</td>
+                                        </tr>
+                                        <tr>
+                                        <td> Sarath </td>
+                                        <td> 100000000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+
+                        <div class="col-md-3">
+
+                            <div class="tile">
+                                <h2 class="tile-title"> Most Active(Value)</h2>
+                                <table class="table table-stripped">
+                                    <thead>
+                                        <tr > 
+                                        <th> Name </th> 
+                                        <th> % Change </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="most-active-val-data">
+                                        <tr>
+                                        <td> Abhijith </td>
+                                        <td> 100000000</td>
+                                        </tr>
+                                        <tr>
+                                        <td> Sarath </td>
+                                        <td> 100000000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+
+
+
                 
             </section>
         </section>
