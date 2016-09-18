@@ -1,5 +1,20 @@
 $(document).ready(function(){
     
+        /* --------------------------------------------------------
+	Components
+    -----------------------------------------------------------*/
+    (function(){
+        /* Textarea */
+
+
+        //Select
+	if($('.select')[0]) {
+	    $('.select').selectpicker();
+	}
+        
+    })();
+    
+    
 
 
     /* --------------------------------------------------------
@@ -40,7 +55,7 @@ $(document).ready(function(){
         });
     })();
 
-
+    
     /* --------------------------------------------------------
      Animate numbers
      -----------------------------------------------------------*/
@@ -80,13 +95,13 @@ $(document).ready(function(){
         $("#up-arrow").css("bottom","0px");
         $("#up-arrow").fadeIn(1000);
     });
-    $('#buy').click(function(){
-        $.get('text/dalalbull-dash.txt', function(data){
+    
+    $('#bull-dashboard').click(function(){
+        $.get('text/dalalbulldash.txt', function(data){
             $('#main-widget').fadeOut(300, function(){
                 $(this).html(data).fadeIn(400);
             });
         });
     });
-        
     
 });

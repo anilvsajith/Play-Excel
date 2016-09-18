@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--[if IE 9 ]><html class="ie9"><![endif]-->
 <html class="menu-active">
@@ -15,6 +16,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/animate.min.css" rel="stylesheet">
         <script src="https://use.fontawesome.com/587a024497.js"></script>
+        <link href="css/form.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <link href="css/icons.css" rel="stylesheet"> 
     </head>
@@ -23,18 +25,17 @@
             <a class="logo pull-left" href="index.html">Excel 2016</a>
             <div class="media-body">
                 <div class="media" id="top-menu">
-                    <a class="pull-right" style="padding-top:0px;" href="#">
+                    <a class="pull-right" style="padding-top:10px;" href="#">
                         <img class="profile-pic animated" src="img/dp/profile-pic.jpg" alt=""> 
                         <span>Malinda Hollaway</span>
-                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
                     </a>
-                    <div class="pull-right tm-icon">
+                    <div class="pull-right tm-icon" style="padding-top:10px;">
                         <a data-drawer="messages" href="">
                             <i class="sa-top-message"></i>
                             <span>Sign Out</span>
                         </a>
                     </div>
-                    <div class="pull-right tm-icon">
+                    <div class="pull-right tm-icon" style="padding-top:10px;">
                         <a data-drawer="notifications" class="drawer-toggle" href="">
                             <i class="sa-top-updates"></i>
                             <i class="n-count animated">9</i>
@@ -45,7 +46,7 @@
             </div>
         </header>
         
-        <div class="clearfix"></div>
+        <div class="clearfix" style="padding-top:1px;"></div>
         <div id="up-arrow">
             <img id="up" src="img/arrows.svg" height="32px" width="32px">
         </div>
@@ -123,14 +124,14 @@
                 </div>
                 <hr class="whiter tick" style="display:none;">
                 <div style="border-bottom: 1px solid rgba(255, 255, 255, 0.14902);">
-                        <h4 class="page-title">DALAL BULL</h4>
-                        <!--<div class="ticker" style="height:22px;overflow:hidden;padding-top:2px;">
-                            <div id='dvStockTicker' class='stockTicker valign' style="overflow-y:hidden;"></div>
-                        </div>-->
+                        <h4 class="page-title" style="position:fixed;">DALAL BULL</h4>
+                        <div class="ticker">
+                            <div id='dvStockTicker' class='stockTicker valign' style="overflow:hidden;"></div>
+                        </div>
                 </div>
                                 
                 <div class="block-area dash">
-                    <a class="dashboard tile" id="buy" href="javascript:void(0)">
+                    <a class="dashboard tile" data-toggle="modal" id="buy" href="#buy-modal">
                         <img src="img/shortcuts/money.png" alt="">
                         <small class="t-overflow">Buy/Short Sell</small>
                     </a>
@@ -150,9 +151,9 @@
                         <img src="img/shortcuts/reports.png" alt="">
                         <small class="t-overflow">Stock Information</small>
                     </a>
-                    <a class="dashboard tile" href="">
+                    <a class="dashboard tile" id="bull-dashboard" href="javascript:void(0);">
                         <img src="img/shortcuts/connections.png" alt="">
-                        <small class="t-overflow">Help</small>
+                        <small class="t-overflow">Dashboard</small>
                     </a>
                 </div>
                 
@@ -165,7 +166,7 @@
                             <div class="tile quick-stats">
                                 <div id="stats-line-2" class="pull-left"></div>
                                 <div class="data">
-                                    <h2 data-value="2454" id="networth"> 0 </h2>
+                                    <h2 data-value="100000">0</h2>
                                     <small>NET WORTH</small>
                                 </div>
                             </div>
@@ -175,7 +176,7 @@
                             <div class="tile quick-stats media">
                                 <div id="stats-line-3" class="pull-left"></div>
                                 <div class="media-body">
-                                    <h2 data-value="14" id="rank"> 0 </h2>
+                                    <h2 data-value="14">0</h2>
                                     <small>Rank</small>
                                 </div>
                             </div>
@@ -187,7 +188,7 @@
                                 <div id="stats-line-4" class="pull-left"></div>
 
                                 <div class="media-body">
-                                    <h2 data-value="23">0</h2>
+                                    <h2 data-value="4896">0</h2>
                                     <small>MARGIN</small>
                                 </div>
                             </div>
@@ -268,145 +269,177 @@
                             <!--Leaderboard-->
                             <div class="tile">
                                 <h2 class="tile-title">Leaderboard</h2>
-                                <table class="table table-stripped">
-                                    <thead>
-                                        <tr > 
-                                        <th> Username </th> 
-                                        <th> Networth </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="leaderboard-data">
-                                        <tr>
-                                        <td> Abhijith </td>
-                                        <td> 100000000</td>
-                                        </tr>
-                                        <tr>
-                                        <td> Sarath </td>
-                                        <td> 100000000</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="tile-config dropdown">
+                                    <a data-toggle="dropdown" href="" class="tile-menu"></a>
+                                    <ul class="dropdown-menu pull-right text-right">
+                                        <li><a href="">Refresh</a></li>
+                                    </ul>
+                                </div>
+                                <div class="listview narrow">
+                                    <div class="media p-l-5">
+                                        <div class="pull-left">
+                                            <img width="40" src="img/profile-pics/1.jpg" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <small class="text-muted">2 Hours ago by Adrien San</small><br/>
+                                            <a class="t-overflow" href="">Cras molestie fermentum nibh, ac semper</a>   
+                                        </div>
+                                    </div>
+                                    <div class="media p-l-5">
+                                        <div class="pull-left">
+                                            <img width="40" src="img/profile-pics/2.jpg" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <small class="text-muted">5 Hours ago by David Villa</small><br/>
+                                            <a class="t-overflow" href="">Suspendisse in purus ut nibh placerat</a>            
+                                        </div>
+                                    </div>
+                                    <div class="media p-l-5">
+                                        <div class="pull-left">
+                                            <img width="40" src="img/profile-pics/3.jpg" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <small class="text-muted">On 15/12/2013 by Mitch bradberry</small><br/>
+                                            <a class="t-overflow" href="">Cras pulvinar euismod nunc quis gravida. Suspendisse pharetra</a>
+                                        </div>
+                                    </div>
+                                    <div class="media p-l-5">
+                                        <div class="pull-left">
+                                            <img width="40" src="img/profile-pics/4.jpg" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <small class="text-muted">On 14/12/2013 by Mitch bradberry</small><br/>
+                                            <a class="t-overflow" href="">Cras pulvinar euismod nunc quis gravida. </a>                              
+                                        </div>
+                                    </div>
+                                    <div class="media p-l-5">
+                                        <div class="pull-left">
+                                            <img width="40" src="img/profile-pics/5.jpg" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <small class="text-muted">On 13/12/2013 by Mitch bradberry</small><br/>
+                                            <a class="t-overflow" href="">Integer a eros dapibus, vehicula quam accumsan, tincidunt purus</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            
                         </div>
                         <div class="clearfix"></div>
                     </div>
                 </div>
-
-
-                <div class="block-area" id="main-widget">
-                    <div class="row">
-                     
-                        
-                        <div class="col-md-3">
-                            
-                            <div class="tile">
-                                <h2 class="tile-title"> Top Gainers</h2>
-                                <table class="table table-stripped">
-                                    <thead>
-                                        <tr > 
-                                        <th> Name </th> 
-                                        <th> % Change </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="top-gainers-data">
-                                        <tr>
-                                        <td> Abhijith </td>
-                                        <td> 100000000</td>
-                                        </tr>
-                                        <tr>
-                                        <td> Sarath </td>
-                                        <td> 100000000</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            
-                        </div>
-                        <div class="col-md-3">
-                            
-                            <div class="tile">
-                                <h2 class="tile-title"> Top Losers</h2>
-                                <table class="table table-stripped">
-                                    <thead>
-                                        <tr > 
-                                        <th> Name </th> 
-                                        <th> % Change </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="top-losers-data">
-                                        <tr>
-                                        <td> Abhijith </td>
-                                        <td> 100000000</td>
-                                        </tr>
-                                        <tr>
-                                        <td> Sarath </td>
-                                        <td> 100000000</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            
-                        </div>
-                        <div class="col-md-3">
-
-                            <div class="tile">
-                                <h2 class="tile-title"> Most Active(Qty)</h2>
-                                <table class="table table-stripped">
-                                    <thead>
-                                        <tr > 
-                                        <th> Name </th> 
-                                        <th> % Change </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="most-active-qty-data">
-                                        <tr>
-                                        <td> Abhijith </td>
-                                        <td> 100000000</td>
-                                        </tr>
-                                        <tr>
-                                        <td> Sarath </td>
-                                        <td> 100000000</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            
-                        </div>
-
-                        <div class="col-md-3">
-
-                            <div class="tile">
-                                <h2 class="tile-title"> Most Active(Value)</h2>
-                                <table class="table table-stripped">
-                                    <thead>
-                                        <tr > 
-                                        <th> Name </th> 
-                                        <th> % Change </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="most-active-val-data">
-                                        <tr>
-                                        <td> Abhijith </td>
-                                        <td> 100000000</td>
-                                        </tr>
-                                        <tr>
-                                        <td> Sarath </td>
-                                        <td> 100000000</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-
-
-
-
                 
+                    <!-- Modal -->
+                    <div class="modal fade" id="buy-modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" style="text-align:center;">BUY</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="form-horizontal" role="form">
+                                        <div class="form-group">
+                                            <label for="inputName4" class="col-md-3 control-label">Company</label>
+                                            <div class="col-md-7">
+                                                <select class="select">
+                                                    <option>Default</option>
+                                                    <option>Toyota Avalon</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputEmail4" class="col-md-3 control-label">Quantity</label>
+                                            <div class="col-md-7">
+                                                <input type="email" class="form-control input-sm" id="inputEmail4" placeholder="...">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputMessage3" class="col-md-3 control-label">Buy/Short Sell</label>
+                                            <div class="col-md-7">
+                                                <select class="select">
+                                                    <option>Buy</option>
+                                                    <option>Short Sell</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="modal-sub">
+                                    <div class="modal-title" style="text-align:center;">Transaction Details</div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Company&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> Josettan</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Trade Price&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 10.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">No. of Shares&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 10</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Type of Trade&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> Short Sell</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Total Value&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 100.00</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Brokerage&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 0.05</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Margin&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 50.00</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Cash Available&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 100000.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer" style="margin-top:-5px;">
+                                    <button type="button" class="btn btn-sm btn-alt" style="float:right;">Buy Stock</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </section>
         </section>
         
@@ -419,6 +452,7 @@
 
         <!-- Bootstrap -->
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/select.min.js"></script>
 
         <!-- All JS functions -->
         <script src="js/functions.js"></script>

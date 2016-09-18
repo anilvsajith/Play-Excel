@@ -60,7 +60,6 @@
 }
 
 html {
-    overflow-x: hidden\0/;
     overflow-y: hidden;
     /*-ms-overflow-style: scrollbar; */
 }
@@ -70,6 +69,7 @@ html, body {
 }
 
 body {
+    overflow: hidden;
     font-family: 'open-sans-light', sans-serif;
     font-size: 12px;
 }
@@ -219,7 +219,7 @@ blockquote small {
 /* Header */
 #header {
     border-bottom: 1px solid rgba(255,255,255,0.15);
-    min-height: 50px;
+    min-height: 65px;
     position: relative;
     padding-right: 7px;
 }
@@ -231,9 +231,9 @@ blockquote small {
 /* Logo */
 .logo {
     width: 233px;
-    height: 50px;
+    height: 65px;
     text-align: center;
-    padding: 14px 0 12px 0px;
+    padding: 19px 0 12px 0px;
     font-size: 16px;
     margin-right: 9px !important;
     background: rgba(0, 0, 0, 0.23);
@@ -696,7 +696,7 @@ blockquote small {
     padding-bottom: 0px;
     position: absolute;
     bottom: 0;  
-    width: 100%;
+    margin-left: 50%;
     -webkit-transition: height 0.25s;
     transition: height 0.25s;  
     -webkit-transition: width 0.25s;
@@ -708,6 +708,20 @@ blockquote small {
 #up:hover{
     height: 38px;
     width: 38px;
+}
+
+
+/* List */
+.t-overflow {
+    width: 97%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+}
+
+.p-l-5 {
+    padding-left: 5px !important;
 }
 
 /* Pagination */
@@ -814,8 +828,16 @@ blockquote small {
     overflow-y: hidden;
 }
 
+.modal-sub {
+    padding: 10px 15px 4px;
+}
+
 .dark {
     padding: 0;
+}
+
+.modal-dialog {
+    margin: 5% auto;
 }
 
 .modal-content, .dark {
@@ -1228,6 +1250,7 @@ hr {
     }
 
 }
+   
 
 @media (min-width: 480px) {
     .profile-summary .btn.hidden-xs {
@@ -1457,9 +1480,16 @@ hr {
 }
 
 /*ticker*/
+.ticker {
+    margin-left: 12%;
+    padding-top: 1px;
+    width: 88%;
+    height: 22px;
+    overflow: hidden;
+}
+    
 #dvStockTicker
     {
-      display: inline-block;
       overflow:hidden; 
       font-weight: 200;
       list-style-type: none;
@@ -1471,14 +1501,13 @@ hr {
     #dvStockTicker span.quote
     {
       margin: 0;
-      font-weight: bold;
-      color: #424242 ;
-      font-size: 15px;
+      color: rgba(226, 226, 226, 0.81);
+      font-size: 13px;
       padding: 0 5px 0 10px;
     }
     .GreenText
     {
-      color: #1b5e20 ;
+      color: rgba(92, 245, 0, 0.82);
       font-weight: 700;
     }
     .RedText
@@ -1499,4 +1528,3 @@ hr {
       margin-right: 5px;
     }
  /*ticker end*/   
-
