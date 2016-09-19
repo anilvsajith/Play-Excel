@@ -77,9 +77,9 @@ only screen and (                min-resolution: 1.25dppx) {
 
     
     /* Top Menu */
-    .sa-top-message { background-image: url(../img/icon/message@2x.png); background-size: 25px 17px; }
+    /*.sa-top-message { background-image: url(../img/icon/message@2x.png); background-size: 25px 17px; }
     .sa-top-updates { background-image: url(../img/icon/updates@2x.png); background-size: 25px 25px; }
-
+*/
     /* Editor */
     .editor-text { background-image: url(../img/editor/text@2x.png); background-size: 11px 13px; }
     .editor-bold { background-image: url(../img/editor/bold@2x.png); background-size:  10px 13px;}

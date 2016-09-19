@@ -25,18 +25,18 @@
             <a class="logo pull-left" href="index.html">Excel 2016</a>
             <div class="media-body">
                 <div class="media" id="top-menu">
-                    <a class="pull-right" style="padding-top:10px;" href="#">
+                    <a class="pull-right" style="padding-top:10px;">
                         <img class="profile-pic animated" src="img/dp/profile-pic.jpg" alt=""> 
                         <span>Malinda Hollaway</span>
                     </a>
                     <div class="pull-right tm-icon" style="padding-top:10px;">
-                        <a data-drawer="messages" href="">
+                        <a data-drawer="messages" >
                             <i class="sa-top-message"></i>
                             <span>Sign Out</span>
                         </a>
                     </div>
                     <div class="pull-right tm-icon" style="padding-top:10px;">
-                        <a data-drawer="notifications" class="drawer-toggle" href="">
+                        <a data-drawer="notifications" class="drawer-toggle" >
                             <i class="sa-top-updates"></i>
                             <i class="n-count animated">9</i>
                             <span>Notifications</span>
@@ -70,7 +70,7 @@
                 <div id="notifications" class="tile drawer animated">
                     <div class="listview narrow">
                         <div class="media">
-                            <a href="">Notification Settings</a>
+                            <a >Notification Settings</a>
                             <span class="drawer-close">&times;</span>
                         </div>
                         <div class="overflow" style="height: 254px">
@@ -80,7 +80,7 @@
                                 </div>
                                 <div class="media-body">
                                     <small class="text-muted">Nadin Jackson - 2 Hours ago</small><br>
-                                    <a class="t-overflow" href="">Mauris consectetur urna nec tempor adipiscing. Proin sit amet nisi ligula. Sed eu adipiscing lectus</a>
+                                    <a class="t-overflow" >Mauris consectetur urna nec tempor adipiscing. Proin sit amet nisi ligula. Sed eu adipiscing lectus</a>
                                 </div>
                             </div>
                             <div class="media">
@@ -89,7 +89,7 @@
                                 </div>
                                 <div class="media-body">
                                     <small class="text-muted">David Villa - 5 Hours ago</small><br>
-                                    <a class="t-overflow" href="">Suspendisse in purus ut nibh placerat Cras pulvinar euismod nunc quis gravida. Suspendisse pharetra</a>
+                                    <a class="t-overflow" >Suspendisse in purus ut nibh placerat Cras pulvinar euismod nunc quis gravida. Suspendisse pharetra</a>
                                 </div>
                             </div>
                             <div class="media">
@@ -98,7 +98,7 @@
                                 </div>
                                 <div class="media-body">
                                     <small class="text-muted">Harris worgon - On 15/12/2013</small><br>
-                                    <a class="t-overflow" href="">Maecenas venenatis enim condimentum ultrices fringilla. Nulla eget libero rhoncus, bibendum diam eleifend, vulputate mi. Fusce non nibh pulvinar, ornare turpis id</a>
+                                    <a class="t-overflow" >Maecenas venenatis enim condimentum ultrices fringilla. Nulla eget libero rhoncus, bibendum diam eleifend, vulputate mi. Fusce non nibh pulvinar, ornare turpis id</a>
                                 </div>
                             </div>
                             <div class="media">
@@ -107,7 +107,7 @@
                                 </div>
                                 <div class="media-body">
                                     <small class="text-muted">Mitch Bradberry - On 14/12/2013</small><br>
-                                    <a class="t-overflow" href="">Phasellus interdum felis enim, eu bibendum ipsum tristique vitae. Phasellus feugiat massa orci, sed viverra felis aliquet quis. Curabitur vel blandit odio. Vestibulum sagittis quis sem sit amet tristique.</a>
+                                    <a class="t-overflow" >Phasellus interdum felis enim, eu bibendum ipsum tristique vitae. Phasellus feugiat massa orci, sed viverra felis aliquet quis. Curabitur vel blandit odio. Vestibulum sagittis quis sem sit amet tristique.</a>
                                 </div>
                             </div>
                             <div class="media">
@@ -116,7 +116,7 @@
                                 </div>
                                 <div class="media-body">
                                     <small class="text-muted">Nadin Jackson - On 15/12/2013</small><br>
-                                    <a class="t-overflow" href="">Ipsum wintoo consectetur urna nec tempor adipiscing. Proin sit amet nisi ligula. Sed eu adipiscing lectus</a>
+                                    <a class="t-overflow" >Ipsum wintoo consectetur urna nec tempor adipiscing. Proin sit amet nisi ligula. Sed eu adipiscing lectus</a>
                                 </div>
                             </div>
                         </div>
@@ -147,13 +147,13 @@
                         <img src="img/shortcuts/stats.png" alt="">
                         <small class="t-overflow">Transaction History</small>
                     </a>
-                    <a class="dashboard tile" href="">
+                    <a class="dashboard tile" data-toggle="modal" href="#stockinfo-modal">
                         <img src="img/shortcuts/reports.png" alt="">
                         <small class="t-overflow">Stock Information</small>
                     </a>
-                    <a class="dashboard tile" id="bull-dashboard" href="javascript:void(0);">
+                    <a class="dashboard tile" data-toggle="modal" href="#help-modal">
                         <img src="img/shortcuts/connections.png" alt="">
-                        <small class="t-overflow">Dashboard</small>
+                        <small class="t-overflow">Help</small>
                     </a>
                 </div>
                 
@@ -164,6 +164,7 @@
                     <div class="row">
                         <div class="col-md-3 col-xs-6">
                             <div class="tile quick-stats">
+                                <img src="img/card1.svg" style="float:right;height:50px;weight:50px;margin-right:10px;">
                                 <div id="stats-line-2" class="pull-left"></div>
                                 <div class="data">
                                     <h2 data-value="100000">0</h2>
@@ -174,6 +175,7 @@
 
                         <div class="col-md-3 col-xs-6">
                             <div class="tile quick-stats media">
+                                <img src="img/card2.svg" style="float:right;height:50px;weight:50px;margin-right:10px;">
                                 <div id="stats-line-3" class="pull-left"></div>
                                 <div class="media-body">
                                     <h2 data-value="14">0</h2>
@@ -184,9 +186,8 @@
 
                         <div class="col-md-3 col-xs-6">
                             <div class="tile quick-stats media">
-
+                                <img src="img/card3.svg" style="float:right;height:50px;weight:50px;margin-right:10px;">
                                 <div id="stats-line-4" class="pull-left"></div>
-
                                 <div class="media-body">
                                     <h2 data-value="4896">0</h2>
                                     <small>MARGIN</small>
@@ -196,6 +197,7 @@
 
                         <div class="col-md-3 col-xs-6">
                             <div class="tile quick-stats media">
+                                <img src="img/card4.svg" style="float:right;height:50px;weight:50px;margin-right:10px;">
                                 <div id="stats-line" class="pull-left"></div>
                                 <div class="media-body">
                                     <h2 data-value="293">0</h2>
@@ -218,13 +220,6 @@
                             <!-- Main Chart -->
                             <div class="tile">
                                 <h2 class="tile-title">Graph</h2>
-                                <div class="tile-config dropdown">
-                                    <a data-toggle="dropdown" href="" class="tile-menu"></a>
-                                    <ul class="dropdown-menu pull-right text-right">
-                                        <li><a class="tile-info-toggle" href="">Chart Information</a></li>
-                                        <li><a href="">Refresh</a></li>
-                                    </ul>
-                                </div>
                                 <div class="p-10">
                                     <div id="line-chart" class="main-chart" style="height: 250px"></div>
 
@@ -269,20 +264,14 @@
                             <!--Leaderboard-->
                             <div class="tile">
                                 <h2 class="tile-title">Leaderboard</h2>
-                                <div class="tile-config dropdown">
-                                    <a data-toggle="dropdown" href="" class="tile-menu"></a>
-                                    <ul class="dropdown-menu pull-right text-right">
-                                        <li><a href="">Refresh</a></li>
-                                    </ul>
-                                </div>
                                 <div class="listview narrow">
                                     <div class="media p-l-5">
                                         <div class="pull-left">
                                             <img width="40" src="img/profile-pics/1.jpg" alt="">
                                         </div>
                                         <div class="media-body">
-                                            <small class="text-muted">2 Hours ago by Adrien San</small><br/>
-                                            <a class="t-overflow" href="">Cras molestie fermentum nibh, ac semper</a>   
+                                            <a class="t-overflow marg" >Hari</a>   
+                                            <a class="t-overflow marg" style="font-size:11px;margin-top:5px;" >100000</a>
                                         </div>
                                     </div>
                                     <div class="media p-l-5">
@@ -290,8 +279,8 @@
                                             <img width="40" src="img/profile-pics/2.jpg" alt="">
                                         </div>
                                         <div class="media-body">
-                                            <small class="text-muted">5 Hours ago by David Villa</small><br/>
-                                            <a class="t-overflow" href="">Suspendisse in purus ut nibh placerat</a>            
+                                            <a class="t-overflow marg" >Sarath</a> 
+                                            <a class="t-overflow marg" style="font-size:11px;margin-top:5px;" >100000</a>
                                         </div>
                                     </div>
                                     <div class="media p-l-5">
@@ -299,8 +288,8 @@
                                             <img width="40" src="img/profile-pics/3.jpg" alt="">
                                         </div>
                                         <div class="media-body">
-                                            <small class="text-muted">On 15/12/2013 by Mitch bradberry</small><br/>
-                                            <a class="t-overflow" href="">Cras pulvinar euismod nunc quis gravida. Suspendisse pharetra</a>
+                                            <a class="t-overflow marg" >Roshan</a>
+                                            <a class="t-overflow marg" style="font-size:11px;margin-top:5px;" >100000</a>
                                         </div>
                                     </div>
                                     <div class="media p-l-5">
@@ -308,8 +297,8 @@
                                             <img width="40" src="img/profile-pics/4.jpg" alt="">
                                         </div>
                                         <div class="media-body">
-                                            <small class="text-muted">On 14/12/2013 by Mitch bradberry</small><br/>
-                                            <a class="t-overflow" href="">Cras pulvinar euismod nunc quis gravida. </a>                              
+                                            <a class="t-overflow marg" >Balram</a>                              
+                                            <a class="t-overflow marg" style="font-size:11px;margin-top:5px;" >100000</a>
                                         </div>
                                     </div>
                                     <div class="media p-l-5">
@@ -317,8 +306,8 @@
                                             <img width="40" src="img/profile-pics/5.jpg" alt="">
                                         </div>
                                         <div class="media-body">
-                                            <small class="text-muted">On 13/12/2013 by Mitch bradberry</small><br/>
-                                            <a class="t-overflow" href="">Integer a eros dapibus, vehicula quam accumsan, tincidunt purus</a>
+                                            <a class="t-overflow marg">Athul</a>
+                                            <a class="t-overflow marg" style="font-size:11px;margin-top:5px;">100000</a>
                                         </div>
                                     </div>
                                 </div>
@@ -370,7 +359,7 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <h4 class="modal-title" style="text-align:center;text-transform: none;margin: 20px 0px 10px;">Pending Order</h4>                                        
+                                        <h4 class="modal-title" style="text-align:center;font-size:13px;font-weight:100;text-transform: none;margin: 20px 0px 10px;">Pending Order</h4>                                        
                                         <div class="form-group">
                                             <label for="desired" class="col-md-3 control-label">Desired price</label>
                                             <div class="col-md-7">
@@ -381,7 +370,7 @@
                                 </div>
                                 <div class="divider"></div>
                                 <div class="modal-sub">
-                                    <div class="modal-title" style="text-align:center;">Transaction Details</div>
+                                    <div class="modal-title" style="text-align:center;font-size:14px;">Transaction Details</div>
                                 </div>
                                 <div class="modal-body">
                                     <div class="row">
@@ -623,7 +612,7 @@
                                     </table>
                                 </div> 
                                 <div class="modal-footer" style="margin-top:0px;">
-                                    <button type="button" class="btn btn-sm btn-alt" style="float:right;">Close</button>
+                                    <button type="button" data-dismiss="modal" class="btn btn-sm btn-alt" style="float:right;">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -707,7 +696,131 @@
                                     </table>
                                 </div> 
                                 <div class="modal-footer" style="margin-top:0px;">
-                                    <button type="button" class="btn btn-sm btn-alt" style="float:right;">Close</button>
+                                    <button type="button" data-dismiss="modal" class="btn btn-sm btn-alt" style="float:right;">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="modal fade" id="stockinfo-modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" style="text-align:center;">Stock Information</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="form-horizontal" role="form">
+                                        <div class="form-group">
+                                            <label for="company" class="col-md-3 control-label">Company</label>
+                                            <div class="col-md-7">
+                                                <select class="select">
+                                                    <option>Default</option>
+                                                    <option>Toyota Avalon</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
+                                                </select>
+                                            </div>
+                                        </div>                                                    
+                                    </form>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Open&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 10.00</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Current Price&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 100.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">High&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 10</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Low&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> Short Sell</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Change&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 0.05</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">% Change&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 50.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Trade Qty (Lacs)&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 100000.00</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Trade Value (Crores)&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 100000.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer" style="margin-top:-5px;">
+                                    <button type="button" data-dismiss="modal" class="btn btn-sm btn-alt" style="float:right;">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="modal fade" id="help-modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" style="width:700px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" style="text-align:center;">Help</h4>
+                                </div>
+                                <div class="modal-body" style="height:400px;overflow:auto;">
+                                    <h4 class="modal-title" style="font-size:12px;"><strong>What is share/stock ?</strong></h4>
+                                    <p style="margin:10px;">In simple words, a share or stock is a document issued by a company, which entitles its holder to be one of the owners of the company.Shares are issued by a company or can be purchased from the stock market. By holding a share you are entitled to get dividends from the company profit and by sale of your holdings you get capital gain by the rule of thumb, if the share value at the time of sale is higher than your purchase value.However, you also run a risk of making a capital loss if you have to sell the share at a price below your purchase price.A company's stock price reflects what investors think about the stock, not necessarily what the company is "worth". <br>
+For example, companies that showcase high growth rate often trade at a price higher than the company's actual worth.Stock prices of specific sector gets affected by all forms of news regarding that sector. Publicly traded companies are required to report quarterly on their financial status and earnings. Market sentiments and general investor opinions can also affect share prices.</p>
+                                    <h4 class="modal-title" style="font-size:12px;"><strong>Who is a stock broker ?</strong></h4>
+                                    <p style="margin:10px;">A Stock Broker is a person or a Firm that trades on its clients' behalf. You tell them where you want to invest in and they will issue the transaction order. You will have to pay brokerage for the service of the broker. Some stock brokers also give out financial advice for which you are charged extra.</p>
+                                    <h4 class="modal-title" style="font-size:12px;"><strong>Buy/Short sell</strong></h4>
+                                    <p style="margin:10px;">
+                                        Buy<br>Clear from the term BUY a stock with the money you have....as simple as that<br><br>Short Sell<br>When an investor goes LONG on an investment, it means he/she has bought a stock believing its price will rise in the future. Conversely, when an investor goes SHORT, he is anticipating a decrease in share price.
+Short selling is selling of a stock that the seller doesn't own. More specifically, a short sale is the sale of a security that isn't owned by the seller, but that is promised to be delivered. That may sound confusing, but it's actually a simple concept.<br><br>Still with us? Then lets see more: When you Short Sell a stock, your broker will lend it to you. The stock will come from the broker's own inventory, from another one of the Firm's customers, or from another brokerage Firm. The shares are sold and the proceeds are credited to your account. Sooner or later you must "close" the short by buying back the same number of shares (called Covering) and return them to your broker. If the price drops, you can buy back the stock at the lower price and make a profit on the difference. If the price of the stock rises, you have to buy it back at the higher price, and you lose money.<br><br>Limit Trading<br>Limit Trading - When you started playing the game you might have seen the field that says Pending Order, well this is what limit trading is all about. Here you may mention a price at which you want the shares to be bought or sold if you are not happy with the current price. In DALAL BULL, all the pending transactions that has not yet executed will be cancelled automatically when the market closes (i.e. at 15:30). So set the limit which may reach the target before 15.30. You will have to pay brokerage only for the executed transactions.                       </p>
+                                    <h4 class="modal-title" style="font-size:12px;"><strong>Sell/Short Cover</strong></h4>
+                                    <p style="margin:10px;">Sell<br>
+                                        This is all about selling what you bought....thats it!<br><br>
+                                        Short Cover<br>
+                                        This is the process by which you buy back the shares that you already Short sold. First you sell and then you buy (just the opposite of the actual transactions of buying and selling). But the catch is, when the market closes at 15.30, all the shares that you have Short Sold & not Short Covered, will automatically be Short Covered (i.e. bought back)
+                                    </p>
+                                </div>
+                                <div class="modal-footer" style="margin-top:1px;">
+                                    <button type="button" data-dismiss="modal" class="btn btn-sm btn-alt" style="float:right;">Close</button>
                                 </div>
                             </div>
                         </div>
