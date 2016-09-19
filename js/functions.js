@@ -54,7 +54,6 @@ $(document).ready(function(){
             $('.tick').css('display','none');
         });
     })();
-
     
     /* --------------------------------------------------------
      Animate numbers

@@ -857,7 +857,7 @@ blockquote small {
 
 .modal-title, .dark-title {
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 13px;
     margin: 0;
     line-height: 1.428571429;
 }
@@ -1528,3 +1528,25 @@ hr {
       margin-right: 5px;
     }
  /*ticker end*/   
+
+/* Tables */
+.table > thead > tr > th {
+    font-weight: normal;
+    padding: 5px 8px 6px;
+    text-transform: uppercase;
+    border-bottom: 0;
+}
+
+.table td, .table th {
+    border-color: rgba(255,255,255,0.05) !important;
+}
+
+.table-condensed > thead > tr > th {
+    padding: 3px 5px 5px;
+}
+
+.table-bordered, .table-responsive {
+    border: 0;
+}
+
+
