@@ -22,7 +22,7 @@
     </head>
     <body id="skin-blur-night">
         <header id="header" class="media">
-            <a class="logo pull-left" href="index.html">Excel 2016</a>
+            <img class="logo pull-left" src="img/logo/logo-mec.png" style="width: 146px;margin-left: 10px;height: 87px;margin-top: -14px;">
             <div class="media-body">
                 <div class="media" id="top-menu">
                     <a class="pull-right" style="padding-top:10px;">
@@ -131,6 +131,7 @@
                 </div>
                                 
                 <div class="block-area dash">
+                    <img src="img/sponsor/sponsor.png" style="margin-left:63%;position:absolute;">
                     <a class="dashboard tile" data-toggle="modal" id="buy" href="#buy-modal">
                         <img src="img/shortcuts/money.png" alt="">
                         <small class="t-overflow">Buy/Short Sell</small>
@@ -163,45 +164,61 @@
                 <div class="block-area">
                     <div class="row">
                         <div class="col-md-3 col-xs-6">
-                            <div class="tile quick-stats">
-                                <img src="img/card1.svg" style="float:right;height:50px;weight:50px;margin-right:10px;">
-                                <div id="stats-line-2" class="pull-left"></div>
-                                <div class="data">
+                            <div class="row tile quick-stats" style="margin-left:1px;">
+                                <div class="col-md-4">
                                     <h2 data-value="100000">0</h2>
                                     <small>NET WORTH</small>
                                 </div>
+                                <div class="col-md-6">
+                                    <p style="margin-left: 30px;margin-top: 5px;">Cash Available<br>100000</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="img/card1.svg" style="float:right;height:50px;width:50px;margin-right:10px;">
+                                </div>                                    
                             </div>
                         </div>
 
                         <div class="col-md-3 col-xs-6">
-                            <div class="tile quick-stats media">
-                                <img src="img/card2.svg" style="float:right;height:50px;weight:50px;margin-right:10px;">
-                                <div id="stats-line-3" class="pull-left"></div>
-                                <div class="media-body">
+                            <div class="row tile quick-stats media">
+                                <div class="col-md-4 media-body">
                                     <h2 data-value="14">0</h2>
                                     <small>Rank</small>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-xs-6">
-                            <div class="tile quick-stats media">
-                                <img src="img/card3.svg" style="float:right;height:50px;weight:50px;margin-right:10px;">
-                                <div id="stats-line-4" class="pull-left"></div>
-                                <div class="media-body">
-                                    <h2 data-value="4896">0</h2>
-                                    <small>MARGIN</small>
+                                <div class="col-md-6">
+                                    <p style="margin-left: 15px;margin-top: 5px;">Total Players<br>50</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="img/card2.svg" style="float:right;height:50px;width:50px;margin-right:10px;">
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-3 col-xs-6">
-                            <div class="tile quick-stats media">
-                                <img src="img/card4.svg" style="float:right;height:50px;weight:50px;margin-right:10px;">
-                                <div id="stats-line" class="pull-left"></div>
-                                <div class="media-body">
-                                    <h2 data-value="293">0</h2>
-                                    <small>NIFTY</small>
+                            <div class="row tile quick-stats media">
+                                <div class="col-md-4 media-body">
+                                    <h2 data-value="4000">0</h2>
+                                    <small>Margin</small>
+                                </div>
+                                <div class="col-md-6">
+                                    <p style="margin-left: 5px;margin-top: 5px;">No. of Transactions<br>50</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="img/card3.svg" style="float:right;height:50px;width:50px;margin-right:10px;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-xs-6">
+                            <div class="row tile quick-stats media">
+                                <div class="col-md-4 media-body">
+                                    <h2 data-value="290">0</h2>
+                                    <small>Nifty</small>
+                                </div>
+                                <div class="col-md-6">
+                                    <p style="margin-left: 15px;margin-top: 5px;">Change<br>5%</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="img/card4.svg" style="float:right;height:50px;width:50px;margin-right:10px;">
                                 </div>
                             </div>
                         </div>
@@ -222,39 +239,6 @@
                                 <h2 class="tile-title">Graph</h2>
                                 <div class="p-10">
                                     <div id="line-chart" class="main-chart" style="height: 250px"></div>
-
-                                    <div class="chart-info">
-                                        <ul class="list-unstyled">
-                                            <li class="m-b-10">
-                                                Total Sales 1200
-                                                <span class="pull-right text-muted t-s-0">
-                                                    <i class="fa fa-chevron-up"></i>
-                                                    +12%
-                                                </span>
-                                            </li>
-                                            <li>
-                                                <small>
-                                                    Local 640
-                                                    <span class="pull-right text-muted t-s-0"><i class="fa m-l-15 fa-chevron-down"></i> -8%</span>
-                                                </small>
-                                                <div class="progress progress-small">
-                                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <small>
-                                                    Foreign 560
-                                                    <span class="pull-right text-muted t-s-0">
-                                                        <i class="fa m-l-15 fa-chevron-up"></i>
-                                                        -3%
-                                                    </span>
-                                                </small>
-                                                <div class="progress progress-small">
-                                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
                                 </div>  
                             </div>
                             <div class="clearfix"></div>

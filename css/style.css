@@ -71,7 +71,7 @@ html, body {
 body {
     overflow: hidden;
     font-family: 'open-sans-light', sans-serif;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .ie9 #sidebar {
@@ -216,8 +216,13 @@ blockquote small {
     font-size: 8px;
 }
 
+p {
+    cursor: default;
+}
+
 /* Header */
 #header {
+    background: rgba(0, 0, 0, 0.23);
     border-bottom: 1px solid rgba(255,255,255,0.15);
     min-height: 65px;
     position: relative;
@@ -236,7 +241,6 @@ blockquote small {
     padding: 19px 0 12px 0px;
     font-size: 16px;
     margin-right: 9px !important;
-    background: rgba(0, 0, 0, 0.23);
 }
 
 /* Top Menu */
@@ -419,15 +423,15 @@ blockquote small {
     padding: 13px 0 0 0;
     height: 75px;
     overflow: hidden;
+    margin-right: 1px;
 }
 
 .quick-stats h2 {
-    margin: 2px 0 1px 0;
+    margin: 2px 0 1px 5px;
     line-height: 29px;
     font-size: 30px;
     left: 10px;
     top: 10px;
-    position: absolute;
     line-height: 100%;
 }
 
@@ -443,9 +447,8 @@ blockquote small {
 }
 
 .quick-stats small {
-    bottom: 15px;
+    margin-left: 5px;
     left: 11px;
-    position: absolute;
 }
 
 .quick-stats [id^="stats-line"] {
@@ -1348,6 +1351,7 @@ hr {
     }
     /* Header */
     #header {
+        background: rgba(0, 0, 0, 0.23);
         padding: 0;
     }
     
