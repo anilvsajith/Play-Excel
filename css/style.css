@@ -71,7 +71,7 @@ html, body {
 body {
     overflow: hidden;
     font-family: 'open-sans-light', sans-serif;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .ie9 #sidebar {
@@ -518,6 +518,20 @@ p {
     width: 200px;
 }
 
+/* Select & Dropdown */
+.select{
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-shadow: none;
+    color: #fff;
+    box-shadow: none;
+    font-family: open-sans-regular;
+    -webkit-appearance: none;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    width: 100%;
+}
 
 /* Progress bar */
 .progress {
@@ -1537,6 +1551,14 @@ hr {
     cursor: default;
 }
 
+#line-chart {
+    margin-top: 5px;
+    width: 97%;
+    height: 225px;
+    padding: 0px;
+    position: relative;
+    margin: 0px auto;
+}
 
 
 /* Tables */

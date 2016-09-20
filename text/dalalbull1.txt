@@ -190,18 +190,25 @@
                                             <label for="company" class="col-md-3 control-label">Company</label>
                                             <div class="col-md-7">
                                                 <select class="select">
-                                                    <div>
-                                                        <option>Default</option>
-                                                        <option>Toyota Avalon</option>
-                                                        <option>Toyota Crown</option>
-                                                        <option>Lexus LX570</option>
-                                                        <option>Toyota Crown</option>
-                                                        <option>Lexus LX570</option>
-                                                        <option>Toyota Crown</option>
-                                                        <option>Lexus LX570</option>
-                                                        <option>Toyota Crown</option>
-                                                        <option>Lexus LX570</option>
-                                                    </div>
+                                                    <option>Default</option>
+                                                    <option>Toyota Avalon</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
+		                    <option>Toyota Avalon</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -215,10 +222,8 @@
                                             <label for="buystock" class="col-md-3 control-label">Buy/Short Sell</label>
                                             <div class="col-md-7">
                                                 <select class="select">
-                                                    <div>
-                                                        <option>Buy</option>
-                                                        <option>Short Sell</option>
-                                                    </div>
+                                                    <option>Buy</option>
+                                                    <option>Short Sell</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -371,18 +376,16 @@
                                             <label for="inputName4" class="col-md-4 control-label">Company</label>
                                             <div class="col-md-5">
                                                 <select class="select">
-                                                    <div>
-                                                        <option>Default</option>
-                                                        <option>Toyota Avalon</option>
-                                                        <option>Toyota Crown</option>
-                                                        <option>Lexus LX570</option>
-                                                        <option>Toyota Crown</option>
-                                                        <option>Lexus LX570</option>
-                                                        <option>Toyota Crown</option>
-                                                        <option>Lexus LX570</option>
-                                                        <option>Toyota Crown</option>
-                                                        <option>Lexus LX570</option>
-                                                    </div>
+                                                    <option>Default</option>
+                                                    <option>Toyota Avalon</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -583,28 +586,16 @@
                                             <label for="company" class="col-md-3 control-label">Company</label>
                                             <div class="col-md-7">
                                                 <select class="select">
-                                                    <div>
-                                                        <option>Default</option>
-                                                        <option>Toyota Avalon</option>
-                                                        <option>Toyota Crown</option>
-                                                        <option>Lexus LX570</option>
-                                                        <option>Toyota Crown</option>
-                                                        <option>Lexus LX570</option>
-                                                        <option>Toyota Crown</option>
-                                                        <option>Lexus LX570</option>
-                                                        <option>Toyota Crown</option>
-                                                        <option>Lexus LX570</option>
-			        <option>Default</option>
-                                                        <option>Toyota Avalon</option>
-                                                        <option>Toyota Crown</option>
-                                                        <option>Lexus LX570</option>
-                                                        <option>Toyota Crown</option>
-                                                        <option>Lexus LX570</option>
-                                                        <option>Toyota Crown</option>
-                                                        <option>Lexus LX570</option>
-                                                        <option>Toyota Crown</option>
-                                                        <option>Lexus LX570</option>
-                                                    </div>
+                                                    <option>Default</option>
+                                                    <option>Toyota Avalon</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
+                                                    <option>Toyota Crown</option>
+                                                    <option>Lexus LX570</option>
                                                 </select>
                                             </div>
                                         </div>                                                    
